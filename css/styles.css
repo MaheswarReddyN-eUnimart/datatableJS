@@ -1,0 +1,91 @@
+body {
+    font-family: arial;
+    font-size: 14px;
+    margin: 10px;
+}
+a {
+    color: #3d76df;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+table {
+    text-align: left;
+    border: 1px solid #e1e1e1;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+}
+
+th {
+    background-color: #e1e1e1;
+}
+.leftwrapper {
+    width: 50%;
+    display: inline-block;
+}
+
+.rightwrapper {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+.controls {
+    margin-bottom: 10px;
+}
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #999;
+}
+
+input#search {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #999;
+}
+.favbtn {
+    background-color: #ccc;
+    border: 2px solid #999;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.favbtn:hover {
+    background-color: #999;
+}
+#pagination {
+    margin-left: 10px;
+    overflow-x: scroll;
+    width: 79%;
+    display: flex;
+    vertical-align: top;
+}
+.perpagewrap {
+    display: inline-block;
+}
+
+.paginationWrapper {
+    display: flex;
+    margin-top: 10px;
+}
+.pagination-link {
+    border: 1px solid #ccc;
+}
+.pagination-link:hover {
+    background-color: #ccc;
+}
+.pagination-link.active {
+    background-color: #3d76df;
+    color: #fff;
+}
+.pagination-link:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pagination-link:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

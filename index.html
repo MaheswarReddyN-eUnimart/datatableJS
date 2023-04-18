@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ventriks Interview Task</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div class="main">
+	<div class="leftwrapper">
+	<div class="header">
+			<div class="controls">
+				<select id="country-select">
+					<option value="">Select a country</option>
+					<option value="United States">United States</option>
+					<option value="Canada">Canada</option>
+					<option value="United Kingdom">United Kingdom</option>
+					<option value="Australia">Australia</option>
+					<option value="New Zealand">New Zealand</option>
+				</select>
+				
+				<input type="text" id="search" placeholder="Search...">
+
+				<input type="button" class="favbtn" value="Move to Fav List" onclick="favList()" />
+			</div>
+		</div>
+		<table id="table" cellspacing="0" cellpadding="0">
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th>Name</th>
+					<th>Country</th>
+					<th>Country Code</th>
+					<th>Website</th>
+				</tr>
+			</thead>
+			<tbody id="tableData"></tbody>
+		</table>
+
+<div class="paginationWrapper">
+	<div class="perpagewrap">
+		<label>Per page:</label>
+		<select id="perPage">
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+		</select>
+	</div>
+
+		<div id="pagination"></div>
+</div>
+
+		
+	
+	</div>
+	<div class="rightwrapper">
+	<h3>Fav List</h3>
+		<table id="favtable" cellspacing="0" cellpadding="0">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Country</th>
+					<th>Country Code</th>
+					<th>Website</th>
+				</tr>
+			</thead>
+			<tbody id="favtableData"></tbody>
+		</table>
+	</div>
+		
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
